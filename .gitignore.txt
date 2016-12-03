@@ -8,3 +8,6 @@
 
 /myfile
 /node
+
+/node_modules
+/module
