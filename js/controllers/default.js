@@ -18,6 +18,61 @@ function defaultCtrlFn($scope,$http,$interval){
             str: 'c'
         }
     ];
+
+    $scope.change = function(){
+        $http({
+            url:'http://10.73.40.69:8080/iplanning/iplanning/forecastHeaders/test',
+            method:'POST',
+            data: {},
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).success(function(rep){
+            //console.log($scope.data);
+            console.log(rep.data);
+            //var mapdata = JSON.parse(text[, reviver]);
+            //console.log(mapdata);
+            //$scope.data = rep;
+
+        }).error(function(data,header,config,status){
+        //处理响应失败
+            console.log('失败')
+        
+        });
+    }
+
+    $scope.change();
+
+ /*$http.jsonp('http://10.73.40.69:8080/iplanning/iplanning/forecastHeaders/test', {
+
+        params: {
+            // q: 'chart_data1',
+            
+            callback: 'JSON_CALLBACK'
+        }
+
+    }).success(function(data) {
+        
+        console.log("从php取回数据");   
+
+    }).error(function(){
+
+        console.log('失败');
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
     $scope.renderFinish = function(){
         console.log('渲染完之后的操作')
     };
@@ -79,7 +134,7 @@ function defaultCtrlFn($scope,$http,$interval){
         // 读取X-Auth-ID
         resp.headers('X-Auth-ID');
         
-    });
+    });*/
 };
 
 

@@ -1,5 +1,11 @@
 
-{
+[
+    {
 	"country": "Czech Republic",
-	"litres": 156.9
-}
+	"str": 156.9
+    },
+    {
+    "country": "China",
+    "str": 32.9
+    }
+]
