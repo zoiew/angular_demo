@@ -6,3 +6,4 @@
 
 #╧Щбкнд╪Ч╪п
 /node_modules
+/myfile
