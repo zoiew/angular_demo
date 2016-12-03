@@ -1,7 +1,8 @@
 #过滤文件
-/src hl.txt
+/src hl
 
-/gruntfile.js
+/gruntfile
+/hl
 
 #过滤文件夹
 /node_modules
