@@ -1,0 +1,6 @@
+#过滤文件
+/src hl.txt
+
+
+#过滤文件夹
+/node_modules
